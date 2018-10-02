@@ -5,7 +5,7 @@
 ###4.在main目录下添加resources目录，在resources目录下添加META-INF目录，在META-INF目录下添加gradle-plugins目录，在gradle-plugins目录下创建新的properties文件，这个properties文件的名字，你可以随意取名，但是后面使用这个插件的时候，会用到这个名字。
 ###5.在properties文件中声明实现的插件的类 implementation-class=com.wuzp.plugin.MyPlugin
 ###6.因为我们要用到groovy以及后面打包要用到maven,所以在我们自定义的Module下的build.gradle需要添加如下代码：
-```java
+```groovy
 apply plugin: 'groovy'
 apply plugin: 'maven'
 
